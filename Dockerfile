@@ -1,9 +1,12 @@
 FROM golang:1.21-alpine
+RUN apk update && apk add nodejs npm
+RUN npm i -g yarn
+
 
 WORKDIR /app
 COPY . .
-RUN apk update && apk add nodejs npm
-RUN npm i -g yarn
+
+RUN yarn
 RUN yarn build
 RUN go build server/main.go
 
