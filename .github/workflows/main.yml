@@ -1,4 +1,4 @@
-name: web-service
+name: globe
 
 on:
   push:
@@ -10,7 +10,7 @@ env:
   
 jobs:
   build_and_test:
-    name: Web Service
+    name: CI/CD
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
