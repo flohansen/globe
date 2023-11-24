@@ -5,4 +5,4 @@ COPY . .
 RUN go build server/main.go
 
 EXPOSE 8080
-CMD ["./main"]
+CMD ["/app/main"]
