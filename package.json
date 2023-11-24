@@ -1,0 +1,20 @@
+{
+  "name": "globe",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build:js": "node tools/build-js.mjs",
+    "build:css": "node tools/build-css.mjs",
+    "build": "yarn build:js && yarn build:css"
+  },
+  "devDependencies": {
+    "esbuild": "^0.19.7",
+    "esbuild-sass-plugin": "^2.16.0",
+    "glob": "^10.3.10"
+  },
+  "dependencies": {
+    "@types/three": "^0.158.3",
+    "three": "^0.158.0"
+  }
+}
